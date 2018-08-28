@@ -1,11 +1,23 @@
----
-platform: linux
-
-image_resource:
-  type: docker-image
-  source: 
-    repository: openjdk
-    tag: 8-jdk
-
-run:
-  path: C:\Users\I355480\Desktop\Java\java.sh
+resources:
+- name: git-repo
+  type: git
+  source:
+    uri: https://github.com/7thwik/Java-Concourse
+    branch: master
+jobs:
+- name: run-java
+  public: true
+  plan:
+  - get: git-repo
+  - task: hello-world
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: 
+          repository: openjdk
+          tag: 8-jdk
+        inputs:
+          -name: git-repo
+        run:
+          path: git-repo/java.sh
