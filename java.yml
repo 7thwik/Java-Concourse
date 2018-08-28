@@ -17,7 +17,7 @@ jobs:
         source: 
           repository: openjdk
           tag: 8-jdk
-        inputs:
-          -name: git-repo
-        run:
-          path: git-repo/java.sh
+      inputs:
+        -name: git-repo
+      run:
+        path: git-repo/java.sh
