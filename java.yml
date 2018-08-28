@@ -1,0 +1,11 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: 
+    repository: openjdk
+    tag: 8-jdk
+
+run:
+  path: C:\Users\I355480\Desktop\Java\java.sh
