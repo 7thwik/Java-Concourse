@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/bash
 javac samp.java
 java samp
