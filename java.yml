@@ -2,7 +2,7 @@ resources:
 - name: git-repo
   type: git
   source:
-    uri: https://github.com/7thwik/Java-Concourse
+    uri: https://github.com/jimconner/Java-Concourse
     branch: master
 jobs:
 - name: run-java
