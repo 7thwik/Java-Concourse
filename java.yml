@@ -20,4 +20,4 @@ jobs:
       inputs:
         -name: git-repo
       run:
-        path: git-repo/java.sh
+        path: git-repo/java1.sh
