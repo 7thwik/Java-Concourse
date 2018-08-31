@@ -1,4 +1,4 @@
 #!/bin/bash
-cd git-repo
+cd "$(dirname "$0")"
 javac samp.java
 java samp
