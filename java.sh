@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Hello World"
+cd "$(dirname "$0")"
 javac samp.java
 java samp
